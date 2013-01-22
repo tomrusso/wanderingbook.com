@@ -1,0 +1,11 @@
+<?
+	if(!$user_id && (!empty($_REQUEST['username']) && !empty($_REQUEST['password'])))
+	{
+		$user_id = validate_login($_REQUEST['username'], $_REQUEST['password']);
+		$_SESSION['id'] = $user_id;
+	}
+	else
+	{
+		$user_id = $_SESSION['id'];
+	}
+?>

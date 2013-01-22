@@ -1,0 +1,5 @@
+<?
+	$book_public_id = $_REQUEST['book_id'];
+	$book = new public_book($book_public_id);
+?>
+

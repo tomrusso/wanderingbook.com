@@ -1,0 +1,26 @@
+<script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script>
+<script type="text/javascript" src="map.js?v=5"></script>
+
+<style type="text/css">
+	.left
+	{
+		text-align: left;
+		vertical-align: top;
+		padding: 0px;
+	}
+
+	.middle
+	{
+		text-align: left;
+		vertical-align: top;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.right
+	{
+		text-align: right;
+		vertical-align: top;
+		padding: 0px;
+	}
+</style>

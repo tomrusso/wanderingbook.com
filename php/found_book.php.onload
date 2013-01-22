@@ -1,0 +1,15 @@
+<?
+	if($_REQUEST['action'] == "locate")
+	{
+?>
+onload="GetMap(true);"
+<?
+	}
+	else if($_REQUEST['action'] == "show")
+	{
+		$private_id = $_REQUEST['id'];
+?>
+onload="GetMap(false); placeBookPushpins(<? print get_public_id($private_id); ?>);"
+<?
+	}
+?>

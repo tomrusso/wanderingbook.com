@@ -1,0 +1,296 @@
+/* For information about what browsers this CSS was tested on
+   and how to interpret the shorthand I use for the browsers' names,
+   see: http://albin.net/styles/css-notes.txt */
+
+/**************************
+ * general xhtml elements *
+ ************************ */
+html, body
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+body
+{
+	padding-bottom: 10px;
+	color: #000000;
+	background-color: #336699;
+	font-family: "Arial";
+	font-size: 10pt;
+}
+
+/*
+ * IE 6 makes password fields too narrow.  This class is used to make
+ * text and password fields the same size.
+ */
+input.default
+{
+	width: 112pt;
+}
+
+
+/*
+ * A class describing how errors should be presented.
+ */
+.error
+{
+	color: red;
+}
+
+/*******************
+ * the content box *
+ ***************** */
+.contentWrapperBody, .contentWrapperTab, .contentWrapperHead {
+	margin-top: 10px; margin-bottom: 10px;
+	margin-left: 10px; margin-right: 10px;
+	padding: 0px;
+	border: 0px;
+}
+
+/*
+.roundedCorners
+{
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #000000;
+	background-color: #ffffff;
+}
+*/
+
+/*******************
+ * the page header *
+ *******************/
+.contentWrapperHead {
+	text-align:center;
+	font-size:26pt;
+	margin:10px;
+	margin-top:20px;
+}
+.contentWrapperHead .content
+{
+	padding:6pt;
+}
+
+/*****************
+ * the side tabs *
+ *****************/
+.contentWrapperTab
+{
+	text-align:center;
+	font-size:14pt;
+	margin-right:0px
+}
+.contentWrapperTab .content
+{
+	padding:6pt;
+}
+.contentWrapperTab a
+{
+	color:#000000;
+	text-decoration:none;
+}
+.contentWrapperTab a:hover {
+	color:#0000ff;
+	text-decoration:underline;
+}
+
+
+/************************
+ * the main content box *
+ ************************/
+.contentWrapperBody
+{
+	/* Put anything specific to the main body here. */
+}
+.contentWrapperBody .content
+{
+	padding-left: 20pt;
+	padding-right: 20pt;
+	padding-top: 6pt;
+	padding-bottom: 6pt;
+}
+.contentWrapperBody .header
+{
+	font-size:25pt;
+}
+
+.contentWrapperBody .smallHeader
+{
+	font-size:14pt;
+}
+
+/*
+ * Style for the two column header, which encompasses two titles,
+ * on on the left and one on the right.
+ */
+.contentWrapperBody .twoColumnHeader
+{
+	width: 100%;
+	display: inline;
+}
+
+/*
+ * Style elements shared between the left and right titles of the
+ * two column header.
+ */
+.twoColumnHeader .leftTitle, .twoColumnHeader .rightTitle
+{
+	position: relative;
+	width: 50%;
+	text-align: center;
+}
+
+/*
+ * Style elements unique to the left title of the two column header.
+ */
+.twoColumnHeader .leftTitle
+{
+	float: left;
+	margin-right: -50%;
+}
+
+/*
+ * Style elements unique to the right title of the two column header.
+ */
+.twoColumnHeader .rightTitle
+{
+	float: right;
+}
+
+hr
+{
+	color:gray;
+	height:1px;
+}
+
+/*
+ * Layout two columns with the borders collapsed so that there is a
+ * single vertical line dividing them.
+ */
+table.twoColumns
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/*
+ * Style elements shared between the left and right columns.
+ */
+.twoColumns .leftColumn, .twoColumns .rightColumn
+{
+	border-width: 1px;
+	padding: 0px;
+	border-style: none;
+	border-color: gray;
+	width: 50%;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*
+ * Style elemetns unique to each column.  The only difference is that
+ * the left column has no border except for the right side and the
+ * right column has no border except for the left side.  Combined with
+ * the table-collapse property above in the twoColumns class this
+ * creates a single vertical line between the two columns.
+ */
+.twoColumns .leftColumn
+{
+	border-right-style:solid;
+	padding-right: 10pt;
+}
+
+.twoColumns .rightColumn
+{
+	border-left-style:solid;
+	padding-left: 10pt;
+}
+
+/*
+ * Style for the tags that get attached to books.
+ */
+.bookTag
+{
+	display: table;
+	text-align: center;
+	font-size: 18pt;
+	border-style: dashed;
+	border-width: 2px;
+	padding 5px;
+	width: 60%;
+}
+
+/*
+ * Style for the maps displayed on the site.
+ */
+.map
+{
+	position:relative;
+	width:100%;
+	height:400px;
+	border-style:solid;
+	border-width:1px;
+}
+
+/**************************************
+ * classes needed for rounded corners *
+ ************************************ */
+.roundedCornerSpacer
+{
+	margin: 0px; padding: 0px; border: 0px;
+	clear: both;
+	font-size: 1px; line-height: 1px;
+}
+.borderTL, .borderTR, .borderBL, .borderBR
+{
+	width: 14px; height: 14px;
+	padding: 0px; border: 0px;
+	z-index: 99;
+}
+.borderTL, .borderBL { float: left;  clear: both; }
+.borderTR, .borderBR { float: right; clear: right; }
+.borderTL { margin:  -1px  0px  0px -1px; }
+.borderTR { margin:  -1px -1px  0px  0px; }
+.borderBL { margin: -14px  0px  0px  0px; }
+.borderBR { margin: -14px  0px  0px  0px; }
+
+/* IE5-5.5/win needs the border scooted to the left or right by an
+   additional 3px!   Why?  */
+.borderTL {
+	margin-left: -4px;
+	ma\rgin-left: -1px;
+}
+html>body .borderTL  {
+	margin-left: -1px;
+}
+.borderTR {
+	margin-right: -4px;
+	ma\rgin-right: -1px;
+}
+html>body .borderTR  {
+	margin-right: -1px;
+}
+.borderBL {
+	margin-left: -3px;
+	ma\rgin-left: 0px;
+}
+html>body .borderBL {
+	margin-left: 0px;
+}
+.borderBR {
+	margin-right: -3px;
+	ma\rgin-right: 0px;
+}
+html>body .borderBR {
+	margin-right: 0px;
+}

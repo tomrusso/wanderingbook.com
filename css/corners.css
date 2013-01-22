@@ -1,0 +1,95 @@
+.roundedCornerSpacer
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+/*
+ * In the CSS below,the numbers used are the following:
+ * 1px: the width of the border
+ * 3px: a fudge factor needed for IE5/win (see below)
+ * 4px: the width of the border (1px) plus the 3px IE5/win fudge factor
+ * 14px: the width or height of the border image
+ */
+
+.borderTL,.borderTR,.borderBL,.borderBR
+{
+	width: 14px;
+	height: 14px;
+	padding: 0px;
+	border: 0px;
+	z-index: 99;
+}
+
+.borderTL,.borderBL { float: left; clear: both; }
+.borderTR,.borderBR { float: right; clear: right; }
+.borderTL { margin: -1px 0px 0px -1px; }
+.borderTR { margin: -1px -1px 0px 0px; }
+.borderBL { margin: -14px 0px 0px 0px; }
+.borderBR { margin: -14px 0px 0px 0px; }
+
+/*
+ * IE5-5.5/win needs the border scooted to the left or right by an
+ * additional 3px! Why?
+ */
+.borderTL
+{
+	margin-left: -4px;
+	ma\rgin-left: -1px;
+}
+
+html>body.borderTL { margin-left: -1px; }
+
+.borderTR
+{
+	margin-right: -4px;
+	ma\rgin-right: -1px;
+}
+
+html>body.borderTR { margin-right: -1px; }
+
+.borderBL
+{
+	margin-left: -3px;
+	ma\rgin-left: 0px;
+}
+
+html>body.borderBL { margin-left: 0px; }
+
+.borderBR
+{
+	margin-right: -3px;
+	ma\rgin-right: 0px;
+}
+
+html>body.borderBR { margin-right: 0px; }
+
+/*
+ * To get around a known bug in IE5/win, apply the
+ * border (nomargin, padding or positioning) to the
+ * content class and apply what ever positioning you
+ * want to the contentWrapper class.
+ */
+
+.content
+{
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #000000;
+	background-color: white;
+}
+
+.contentWrapper
+{
+	/*
+	 * position this div however you want, but
+	 * keep it spadding and border at zero.
+	 */
+	padding: 0px;
+	border: 0px;
+}
+

@@ -1,0 +1,245 @@
+/*
+ * Styles that apply to the entire page.
+ */
+body
+{
+	font-family: arial, sans-serif;
+	background-color: #336699;
+}
+
+/*
+.mainTable
+{
+	width:100%;
+}
+*/
+
+/*
+a:link
+{
+	color: blue;
+}
+*/
+
+.standardLink
+{
+	color: blue;
+	text-decoration: none;
+}
+
+.standardLink:hover
+{
+	text-decoration: underline;
+}
+
+.titleLink
+{
+	color: #2e8b57;
+	text-decoration: none;
+	font-style: italic;
+}
+
+.titleLink:hover
+{
+	text-decoration: underline;
+}
+
+.bookLink
+{
+	color: #c03d45;
+	text-decoration: none;
+}
+
+.bookLink:hover
+{
+	text-decoration: underline;
+}
+.eventLink
+{
+	color: #336699;
+	text-decoration: none;
+}
+
+.eventLink:hover
+{
+	text-decoration: underline;
+}
+
+.mainLink
+{
+	font-size: 14pt;
+}
+
+/*
+ * The wandering book page header.
+ */
+.header
+{
+	padding-bottom: 6pt;
+	width: 800px;
+	text-align: center;
+}
+
+.headerText
+{
+	padding: 6pt;
+	font-size: 26pt;
+}
+
+/*
+ * The left-hand nav bar.
+ */
+.navBar
+{
+	padding-right: 6pt;
+	vertical-align: top;
+	width: 136px;
+}
+
+.navBarText
+{
+	text-align: center;
+	font-size: 14pt;
+	padding: 6pt;
+}
+
+.navBarText a:link
+{
+	color: blue;
+	text-decoration: none;
+}
+
+.navBarText a:visited
+{
+	color: blue;
+	text-decoration: none;
+}
+
+.navBarText a:hover
+{
+	text-decoration: underline;
+}
+
+.navSpacer
+{
+	height: 6pt;
+}
+
+/*
+ * The page-specific title header.
+ */
+.smallHeaderText
+{
+	text-align: left;
+	font-size: 14pt;
+}
+
+/*
+ * The main block where dynamic content goes.
+ */
+.mainBlockCell
+{
+	vertical-align: top;
+	text-align: center;
+	width: 800px;
+}
+
+.mainBlock
+{
+	padding: 20px;
+	text-align: center;
+}
+
+.mainBlockText
+{
+	font-size: 11pt;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*
+ * The site's copyright footer.
+ */
+.footer
+{
+	font-size: 9pt;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+/*
+ * The maps displayed on the site.
+ */
+.map
+{
+	position: relative;
+	width: 656px;
+	height: 400px;
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/*
+ * How to display book images.
+ */
+.bookImage
+{
+	border: solid 1px black;
+}
+
+/*
+ * Text area for entering the body of events.
+ */
+.bodyEntry
+{
+	margin-top: 10px;
+	width: 650px;
+}
+
+/*
+ * The input area for entering titles.
+ */
+.titleEntry
+{
+	margin-top: 10px;
+	width: 650px;
+}
+
+/*
+ * A submit button on the right hand side.
+ */
+.rightSubmit
+{
+	text-align: right;
+}
+
+/*
+ * Formatting for the login fields.
+ */
+.login
+{
+	width: 100%;
+	text-align: left;
+}
+
+input.default
+{
+	width: 100%;
+}
+
+/*
+ * The header for the current and past books sections.
+ */
+.booksHeader
+{
+	text-align: left;
+	vertical-align: top;
+	padding-right: 30px;
+	font-style: italic;
+}
+
+.blogTitle
+{
+	font-size: 14pt;
+}

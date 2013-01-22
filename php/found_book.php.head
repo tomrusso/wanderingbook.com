@@ -1,0 +1,4 @@
+<!--<script src="http://dev.virtualearth.net/mapcontrol/v4/mapcontrol.js"></script>-->
+<script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script>
+<script type="text/javascript" src="autotab.js"></script>
+<script type="text/javascript" src="map.js?v=1.2"></script>

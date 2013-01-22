@@ -1,0 +1,20 @@
+<?
+	// Get the book's private ID.
+	// *** TODO ***: Do some error checking here.
+	$private_id = $_REQUEST['id'];
+	$event_id = $_REQUEST['event_id'];
+
+	// If only the private ID is defined, we ask the user to indicate on
+	// the map where they found the book.
+	$locate_book = $private_id && !$_REQUEST['lat'] && !$_REQUEST['long'] && !$event_id;
+
+	// If private ID, event ID and latitude and longitude are all defined,
+	// the user has told us where they found the book and we should show
+	// where the book has been.
+	$show_locations = $private_id && $event_id && $_REQUEST['lat'] && $_REQUEST['long'];
+
+	// If private ID and event ID are defined but latitude and longitude
+	// are not, we need to let the user enter text describing where they
+	// found the book.
+	// $enter_body = $private_id && $event_id && !($_REQUEST['lat'] || $_REQUEST['long']);
+?>

@@ -1,0 +1,189 @@
+<?session_start();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?
+	include "/home/wanderin/include/common.php";
+	$user_id = null;
+	$book_user = null;
+
+	if($_SESSION['id'])
+	{
+		$user_id = $_SESSION['id'];
+	}
+	else if($_SESSION['book'])
+	{
+		$book_user = $_SESSION['book'];
+	}
+?>
+
+%%%PRE%%%
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>%%%TITLE%%%</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="corners.css"/>
+		<link rel="stylesheet" type="text/css" href="formatting.css"/>
+
+		<!-- Page-specific includes -->
+		%%%HEAD%%%
+
+	</head>
+	<body %%%ONLOAD%%%>
+		<table class="mainTable">
+			<tr>
+				<td>&nbsp;</td>
+				<td class="header">
+
+<!-- ********************************* -->
+<!-- * Start header                  * -->
+<!-- ********************************* -->
+<div class="contentWrapper">
+	<div class="content">
+		<img class="borderTL" src="images/cornerTL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderTR" src="images/cornerTR.gif" alt="&nbsp;" width="14" height="14"/>
+		<div class="headerText">wandering book dot com</div>
+		<!-- IE5/win puts the margin-bottom of the content div's final element
+		OUTSIDE the containing box (div.content), instead of putting it inside
+		the containing box's edge. So it needs this spacer. -->
+		<div class="roundedCornerSpacer">&nbsp;</div>
+		</div><!-- end of div.content -->
+	<div class="bottomCorners">
+		<img class="borderBL" src="images/cornerBL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderBR" src="images/cornerBR.gif" alt="&nbsp;" width="14" height="14"/>
+	</div>
+</div>
+<!-- ********************************* -->
+<!-- * End header                    * -->
+<!-- ********************************* -->
+
+				</td>
+				<td rowspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="navBar">
+
+<!-- ********************************* -->
+<!-- * Start first nav button        * -->
+<!-- ********************************* -->
+<div class="contentWrapper">
+	<div class="content">
+		<img class="borderTL" src="images/cornerTL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderTR" src="images/cornerTR.gif" alt="&nbsp;" width="14" height="14"/>
+		<div class="navBarText">
+			<a href="index.php">Home</a>
+		</div>
+		<!-- IE5/win puts the margin-bottom of the content div's final element
+		OUTSIDE the containing box (div.content), instead of putting it inside
+		the containing box's edge. So it needs this spacer. -->
+		<div class="roundedCornerSpacer">&nbsp;</div>
+		</div><!-- end of div.content -->
+	<div class="bottomCorners">
+		<img class="borderBL" src="images/cornerBL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderBR" src="images/cornerBR.gif" alt="&nbsp;" width="14" height="14"/>
+	</div>
+</div>
+<!-- ********************************* -->
+<!-- * End first nav button          * -->
+<!-- ********************************* -->
+
+<div class="navSpacer"></div>
+
+<!-- ********************************* -->
+<!-- * Start second nav button       * -->
+<!-- ********************************* -->
+<div class="contentWrapper">
+	<div class="content">
+		<img class="borderTL" src="images/cornerTL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderTR" src="images/cornerTR.gif" alt="&nbsp;" width="14" height="14"/>
+		<div class="navBarText">
+<?
+	if($user_id)
+	{
+?>
+			<a href="profile.php">Profile</a>
+<?
+	}
+	else
+	{
+?>
+			<a href="create_user.php">Join</a>
+<?
+	}
+?>
+		</div>
+		<!-- IE5/win puts the margin-bottom of the content div's final element
+		OUTSIDE the containing box (div.content), instead of putting it inside
+		the containing box's edge. So it needs this spacer. -->
+		<div class="roundedCornerSpacer">&nbsp;</div>
+		</div><!-- end of div.content -->
+	<div class="bottomCorners">
+		<img class="borderBL" src="images/cornerBL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderBR" src="images/cornerBR.gif" alt="&nbsp;" width="14" height="14"/>
+	</div>
+</div>
+<!-- ********************************* -->
+<!-- * End second nav button         * -->
+<!-- ********************************* -->
+
+<div class="navSpacer"></div>
+
+<!-- ********************************* -->
+<!-- * Start third nav button        * -->
+<!-- ********************************* -->
+<div class="contentWrapper">
+	<div class="content">
+		<img class="borderTL" src="images/cornerTL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderTR" src="images/cornerTR.gif" alt="&nbsp;" width="14" height="14"/>
+		<div class="navBarText">
+			<a href="add_book.php">Add&nbsp;a&nbsp;Book</a>
+		</div>
+		<!-- IE5/win puts the margin-bottom of the content div's final element
+		OUTSIDE the containing box (div.content), instead of putting it inside
+		the containing box's edge. So it needs this spacer. -->
+		<div class="roundedCornerSpacer">&nbsp;</div>
+		</div><!-- end of div.content -->
+	<div class="bottomCorners">
+		<img class="borderBL" src="images/cornerBL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderBR" src="images/cornerBR.gif" alt="&nbsp;" width="14" height="14"/>
+	</div>
+</div>
+<!-- ********************************* -->
+<!-- * End third nav button          * -->
+<!-- ********************************* -->
+
+<div class="navSpacer"></div>
+
+<!-- ********************************* -->
+<!-- * Start fourth nav button       * -->
+<!-- ********************************* -->
+<div class="contentWrapper">
+	<div class="content">
+		<img class="borderTL" src="images/cornerTL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderTR" src="images/cornerTR.gif" alt="&nbsp;" width="14" height="14"/>
+		<div class="navBarText">
+			<a href="search.php">Search</a>
+		</div>
+		<!-- IE5/win puts the margin-bottom of the content div's final element
+		OUTSIDE the containing box (div.content), instead of putting it inside
+		the containing box's edge. So it needs this spacer. -->
+		<div class="roundedCornerSpacer">&nbsp;</div>
+		</div><!-- end of div.content -->
+	<div class="bottomCorners">
+		<img class="borderBL" src="images/cornerBL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderBR" src="images/cornerBR.gif" alt="&nbsp;" width="14" height="14"/>
+	</div>
+</div>
+<!-- ********************************* -->
+<!-- * End fourth nav button         * -->
+<!-- ********************************* -->
+
+				</td>
+				<td class="mainBlockCell">
+
+<!-- ********************************* -->
+<!-- * Start main content block      * -->
+<!-- ********************************* -->
+<div class="contentWrapper">
+	<div class="content">
+		<img class="borderTL" src="images/cornerTL.gif" alt="&nbsp;" width="14" height="14"/>
+		<img class="borderTR" src="images/cornerTR.gif" alt="&nbsp;" width="14" height="14"/>
+		<div class="mainBlock">

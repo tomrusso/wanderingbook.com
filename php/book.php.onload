@@ -1,0 +1,1 @@
+onload="GetMap(false); placeBookPushpins(<? echo $book_public_id; ?>);"
